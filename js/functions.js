@@ -20,8 +20,8 @@ $(function () {
 	$("#content").css("height", Math.max($loveHeart.height(), $("#code").height()));
 	$("#content").css("margin-left", Math.max(($window.width() - $("#content").width()) / 2, 10));
 
-	$("#garden").css("margin-top", Math.max(($window.height() - $("#garden").height()) / 10, 10));
-	$("#words").css("margin-top", Math.max(($window.height() - $("#garden").height()) / 10, 10));
+	$("#garden").css("margin-top", Math.max($window.height() / 20, 10));
+	$("#words").css("margin-top", Math.max($window.height() / 20, 10));
 
     // renderLoop
     setInterval(function () {
