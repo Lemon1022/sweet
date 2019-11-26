@@ -6,8 +6,7 @@ var clientHeight = $(window).height();
 $(function () {
     // setup garden
 	$loveHeart = $("#loveHeart");
-	var offsetX = $loveHeart.width() / 2;
-	var offsetY = $loveHeart.height() / 2 - 55;
+	var offsetX = $loveHeart.width();
     $garden = $("#garden");
     gardenCanvas = $garden[0];
 	gardenCanvas.width = $("#loveHeart").width();
@@ -15,13 +14,8 @@ $(function () {
     gardenCtx = gardenCanvas.getContext("2d");
     gardenCtx.globalCompositeOperation = "lighter";
     garden = new Garden(gardenCtx, gardenCanvas);
-	
-	$("#content").css("width", $loveHeart.width() + $("#code").width());
-	$("#content").css("height", Math.max($loveHeart.height(), $("#code").height()));
-	$("#content").css("margin-left", Math.max(($window.width() - $("#content").width()) / 2, 10));
 
-	$("#garden").css("margin-top", Math.max($window.height() / 20, 10));
-	$("#words").css("margin-top", Math.max($window.height() / 20, 10));
+	$loveHeart.css("left", (clientWidth - offsetX) / 2);
 
     // renderLoop
     setInterval(function () {
@@ -127,10 +121,6 @@ function adjustWordsPosition() {
 	$('#words').css("position", "absolute");
 	$('#words').css("top", $("#garden").position().top + 195);
 	$('#words').css("left", $("#garden").position().left + 70);
-}
-
-function adjustCodePosition() {
-	$('#code').css("margin-top", ($("#garden").height() - $("#code").height()) / 2);
 }
 
 function showLoveU() {
