@@ -51,12 +51,12 @@ body{
 }
 #code{
     width: 100%;
-    color:#999;
-    font-size:30px;
+    color:#858585;
+    font-size:32px;
     box-sizing: border-box;
-    padding: 36px 26px 0;
+    padding: 36px 24px 0;
 }
-#code .placeholder{margin-left:15px}
+#code .placeholder{margin-left:64px}
 #copyright{
     margin-top:10px;
     text-align:center;
