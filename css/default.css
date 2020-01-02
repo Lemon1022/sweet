@@ -25,17 +25,18 @@ body{
     height:100%;
 }
 #elapseClock{
+    text-align:right;
     font-size:22px;
     margin-top:10px;
     margin-bottom:10px;
 }
 #words{
-    width:560px;
+    width:500px;
     font-size:28px;
     color:#333;
 }
 #messages{display:none}
-#elapseClock .digit{font-size:32px}
+#elapseClock .digit{font-size:34px}
 #loveu{
     font-size:26px;
     margin-top:66px;
@@ -51,7 +52,7 @@ body{
 #code{
     width: 100%;
     color:#888;
-    font-size:30px;
+    font-size:32px;
     box-sizing: border-box;
     padding: 36px 24px 0;
 }
