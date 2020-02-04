@@ -35,7 +35,7 @@ body{
 #words{
     width:500px;
     font-size:28px;
-    color:#333;
+    color:#888;
 }
 #messages{display:none}
 #elapseClock .digit{font-size:32px}
