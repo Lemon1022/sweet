@@ -7,25 +7,28 @@
 	<link href="css/default.css" type="text/css" rel="stylesheet">
 	<script type="text/javascript" src="js/jquery.js"></script>
 	<script type="text/javascript" src="js/garden.js"></script>
+	<script type="text/javascript" src="js/rem.js"></script>
 	<script type="text/javascript" src="js/functions.js"></script>
 </head>
 
 <body>
-	<audio src="./images/bgsong.mp3" preload="auto" loop autoplay></audio>
+	<!-- <audio src="./images/bgsong.mp3" preload="auto" loop autoplay></audio> -->
 	<div id="mainDiv">
 		<div id="code">
 			To：修澜澜<br/>
 			<span class="placeholder">
-				哇~不敢相信可以陪着这个宝藏男孩这么久。
+				转眼间，我们相识一年了！一个做什么事都三分钟热度的人，在喜欢你这件事上却坚持了这么久。因为你值得！
 			</span><br />
 			<span class="placeholder">
-				记得刚来的时候，每天默默的听，不知道该说什么。就这样一天、两天.....故事从解锁好友位时开始了，我们之间也逐渐有了交流，觉得你是一个超温柔、超宠粉、超细心、很独立的男生。心里暗暗决定尽自己所能支持你、陪着你。
+				自己到底是多么幸运，遇见了这么棒的宝藏男孩。总是想要照顾到每个人情绪，尽量不辜负每一个宝贝的喜欢。
+				你真的很棒！彼此陪伴的每一天都是那么美好，那么珍贵。
 			</span><br />
 			<span class="placeholder">
-				谢谢你和宝贝们每天的陪伴和鼓励。这么久了，我们都还在，很开心，很幸福。
+				总是感觉自己太粗心、就连喜欢你也是这么理性、而且也话也比较少...不好的地方太多了。
+				希望新的一年，自己可以更细心一点、喜欢你多一点、也更努力点！我们一起加油，一起变成更好的自己！
 			</span><br />
 			<span class="placeholder">
-				希望新的一年多努力一点、开心多一点！2020爱你爱你!!^o^
+				（好久没写过小作文了，有点词穷...）
 			</span><br />
 		</div>
 		<div id="loveHeart">
@@ -42,12 +45,10 @@
 			</div>
 		</div>
 	</div>
-
 	<script type="text/javascript">
 		var offsetX = $("#loveHeart").width() / 2;
 		var offsetY = $("#loveHeart").height() / 2 - 55;
 		var together = new Date('2019-07-08 00:32:00');
-
 		if (!document.createElement('canvas').getContext) {
 			var msg = document.createElement("div");
 			msg.id = "errorMsg";
@@ -69,8 +70,10 @@
 
 			$("#code").typewriter();
 		}
+		// setTimeout(function () {
+		// 	flex(false,100,1)
+		// }, 5000);
 	</script>
-
 </body>
 
 </html>
